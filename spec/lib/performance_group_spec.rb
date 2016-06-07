@@ -14,5 +14,6 @@ describe 'PerformanceGroup' do
 		albums = ["Help", "A Hard Day's Night", "Sgt. Pepper's"]
 		foo = PerformanceGroup.new
 		foo.albums = albums # sets array
+		expect(foo.albums).to eq albums
 	end
 end
