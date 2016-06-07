@@ -17,4 +17,10 @@ describe 'PerformanceGroup' do
 		@foo.albums = albums # sets array
 		expect(@foo.albums).to eq albums
 	end
+	it 'prints a list of albums' do
+		albums = ["Help", "A Hard Day's Night", "Sgt. Pepper's"]
+		@foo.albums = albums # sets array
+		expect(@foo.list_albums).to eq "Help\nA Hard Day's Night\nSgt. Pepper's\n"
+		#puts @foo.list_albums
+	end
 end
