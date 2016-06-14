@@ -8,6 +8,5 @@ class PerformanceGroup
 			output += a + "\n"
 		end
 		return output
-		puts output
 	end
 end
